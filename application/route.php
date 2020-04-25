@@ -23,5 +23,5 @@ use think\Route;
 //];
 Route::post('github/pull', function(){
 
-    shell_exec('cd ../;git pull');
+    shell_exec('git pull');
 });
