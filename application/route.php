@@ -21,4 +21,7 @@ use think\Route;
 //    ],
 //
 //];
-Route::post('start', 'api/Index/dgg');
+Route::post('github/pull', function(){
+
+    shell_exec('cd ../;git pull');
+});
